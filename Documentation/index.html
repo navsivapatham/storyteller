@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>Storyteller | Full Installation Documentation</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div class="container">
+
+            <section id="top" class="section docs-heading">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="big-title text-center">
+                            <h1>Storyteller</h1>
+                            <p class="lead">Full Installation Documentation by George Kobylyanskiy</p>
+                        </div>
+                        <!-- end title -->
+                    </div>
+                    <!-- end 12 -->
+                </div>
+                <!-- end row -->
+
+                <hr>
+
+            </section>
+            <!-- end section -->
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+                        <ul class="nav">
+                            <li><a href="#line0">New to Flutter?</a></li>
+                            <li><a href="#line1">Where Should I Host?</a></li>
+                            <li><a href="#line2">Logging Into Your Server</a></li>
+                            <li><a href="#line3">Update Package Installer</a></li>
+                            <li><a href="#line4">Install Nginx</a></li>
+                            <li><a href="#line5">Install MySQL</a></li>
+                            <li><a href="#line6">Install PHP</a></li>
+                            <li><a href="#line7">Configure PHP</a></li>
+                            <li><a href="#line8">Configure Nginx</a></li>
+                            <li><a href="#line9">Create A Folder for Laravel</a></li>
+                            <li><a href="#line10">Install Composer</a></li>
+                            <li><a href="#line11">Run Composer</a></li>
+                            <li><a href="#line12">Laravel Permissions</a></li>
+                            <li><a href="#line13">Database Setup</a></li>
+                            <li><a href="#line14">Working with Your .env file</a></li>
+                            <li><a href="#line15">Encryption Key</a></li>
+                            <li><a href="#line16">Migrate Your Database</a></li>
+                            <li><a href="#line17">Backend Connection</a></li>
+                            <li><a href="#line18">App configuration and Structure</a></li>
+                            <li><a href="#line19">Useful Links</a></li>
+                        </ul>
+                    </nav >
+                </div>
+                <div class="col-md-9">
+                    <section class="welcome">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Introduction<hr></h2>
+                                <div class="row">
+
+                                    <div class="col-md-12 full">
+                                        <div class="intro1">
+                                            <ul>
+                                                <li><strong>Item Name : </strong>Storyteller</li>
+                                                <li><strong>Item Version : </strong> v 1.0</li>
+                                                <li><strong>Author  : </strong> <a href="https://codecanyon.net/user/gkobylyanskiy" target="_blank">George Kobylyanskiy</a></li>
+                                            </ul>
+                                        </div>
+
+                                       <hr>
+                                        <div>
+                                            <p>Thank you so much for purchasing this Item and for being my customer.
+                                                <strong>You are awesome!</strong>
+                                                <br> You can get support for this Item by contacting me through Codecanyon profile <a href="https://codecanyon.net/user/gkobylyanskiy" target="_blank">George Kobylyanskiy</a>.
+                                            </p>
+                                            <div class="intro2 clearfix">
+                                                    <p><i class="fa fa-warning"></i>The following sections are dedicated to the process of Installation
+                                                    <br> Please read them carefully. </p>
+                                            </div>
+                                            <br>
+                                            <div class="intro2 clearfix">
+                                                <p><i class="fa fa-warning"></i>Please be careful.
+                                                <br> Make sure to show hidden files when you copy Backend to your server. </p>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- end row -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="line0" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">New to Flutter?<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>You can find all the Information about Installing and Using it here: <a href="https://flutter.dev/docs" target="_blank">Flutter</a></p>
+                                <img src="images/logof.png" alt="" class="img-responsive img-thumbnail">
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line1" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Where Should I Host?<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>You can host it anywhere you wish. Keep in mind that this tutorial will cover setting up your server through SSH into your VPS instance. This means that it really doesn’t matter who you host through, once you have your IP address and you log into the server via SSH, the tutorial will work the same regardless of your host. So feel free to choose whoever you prefer for hosting your server, you can still follow this tutorial exactly the same.</p>
+                                <div class="intro2 clearfix">
+                                    <p><i class="fa fa-warning"></i>This Documentation Covers the process of Installation for Ubuntu 18.04.3 (LTS) x64 Server</p>
+                                </div>
+                                <p>Minimal spec for the Server:</p>
+                                <img src="images/server.png" alt="" class="img-responsive img-thumbnail">
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line2" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Logging Into Your Server<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <pre class="brush: html; highlight: [2,4]">ssh root@100.100.100.100 </pre>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Simply replace 100.100.100.100 with the IP address for your server. You will have this IP address in your dashboard on your host, or in an email sent to you from your host after the server finished setting up. You might want to write this down somewhere nearby for the time being since we will need it several times going forward.</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+                    <!-- end section -->
+
+                    <section id="line3" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Update Package Installer<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>We will be using the Apt-Get package installer to install new programs on our server. Think of this like the Apple App Store or Google Play Store, except not as cool looking, and it is for Linux programs. Before we start installing things, let’s make sure that our Apt-Get Installer is up to date. To do this just tell it to update with this command:</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo apt-get update </pre>
+                                <p>You will see a bunch of text, and eventually you will get your command prompt again. I encourage you to read some of the output to get used to how apt-get works. The chances of this failing are pretty small, so everyone should be able to move on easily from here.</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line4" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Install Nginx<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Now that we are up to date with our installer, let’s use it to install our server Nginx.</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo apt-get install nginx</pre>
+                                <p>It is surprising how easy this is. If you are using Ubuntu 16.04, then Nginx will even start running itself after being installed.</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line5" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Install MySQL<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Ok, a server isn’t much use without a database. In fact our Laravel application is kind of a waste unless we have a database to store our information (otherwise why not make a single page app or plain old HTML?).</p>
+                                <br/>
+                                <p>Of course you could always install another database, but we will be installing MySQL here. To get started, we need to use Apt-Get to go install the base Mysql Install.</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo apt-get install mysql-server</pre>
+                                <p>This will start installing MySQL. Let the install run until a bright pink/purple screen pops up. This might just be the worst color selection for any terminal application ever, but there isn’t much we can do about it but to embrace it. You will want to type in a password to use for the root MySQL user.</p>
+                                <img src="images/mysql.png" alt="" class="img-responsive img-thumbnail">
+                                <p>You can now secure your installation by using this command:</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo mysql_secure_installation</pre>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line6" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Install PHP<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Ok I kind of tricked you, because your Ubuntu instance probably already has base PHP set up. But you need to set up PHP for processing. This comes in the form of a plugin called php-fpm which is a boring as hell name which sounds much cooler in its full version “FastCGI Process Manager”.</p>
+                                <br/>
+                                <p>We need to install both php-fpm and while we are at it, we will grab php-mysql which as you might guess, allows us to use PHP to talk to MySQL. Lastly we will install php-mbstring which is a requirement for Laravel.</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo apt-get install php-fpm php-mysql php-mbstring</pre>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line7" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Configure PHP<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>With the stack installed, it is now time to configure everything to get it working. There isn’t much to configure with PHP, but there is one small security fix we need to make.</p>
+                                <br/>
+                                <p>In your terminal, open up your php.ini file in whatever text editor you wish (VIM, or eMacs) but for simplicity, we will use Nano in this tutorial.</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo nano /etc/php/7.2/fpm/php.ini</pre>
+                                <p>The line we need to edit is cgi.fix_pathinfo=0 so you can either search for it like a needle in a haystack, or you can search for it using Ctrl+W , I personally recommend searching for it. Press Ctrl+W and now type in cgi.fix_pathinfo= and click enter. This will take you to the right line right away. You will see a semicolon the left of this line. Delete the semi colon and then change the 1 into a 0 and save the file. The file should look like this upon saving:</p>
+                                <img src="images/php.png" alt="" class="img-responsive img-thumbnail">
+                                <p>To save something in Nano, just press Ctrl+X and type Y and then press Enter. Before the changes can take effect we need to restart php-fpm by typing in this command:</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo systemctl restart php7.2-fpm</pre>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line8" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Configure Nginx<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Here is where things will start to get a little tricky. Get your thinking caps on and lets configure our server engine. All the configuration we need to make is in the following config file. Go ahead and open it up in Nano using the following command (use another editor if you prefer).</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo nano /etc/nginx/sites-available/default</pre>
+                                <p>You will see a lot of lines with # in front of them, these are comments. For simplicity, we will remove comments in this tutorial to make it easier to see what changed.</p>
+                                <pre class="brush: html; highlight: [2,4]">
+                                server {
+                                    listen 80 default_server;
+                                    listen [::]:80 default_server;
+                                    
+                                    root /var/www/html;
+                                    index index.html index.htm index.nginx-debian.html;
+                                
+                                    server_name _;
+                                
+                                    location / {
+                                        try_files $uri $uri/ =404;
+                                    }
+                                }
+                            </pre>
+                                <p>The first change we need to make to this file is to allow it to recognize index.php as a valid file to deliver. In the line with all of the index names, we will add index.php to the list of allowed file types to deliver by default. What this line tells Nginx is to first look for an index file, then look for an index.php file, then an index.html file and so forth. It will start at the beginning and work down until it finds a matching file. Then the matching file is what is sent to the user. We want it to deliver an index.php file before an index.html file, so the order is important here. Add the red text shown below.</p>
+                                <pre class="brush: html; highlight: [2,4]">
+                                server {
+                                    listen 80 default_server;
+                                    listen [::]:80 default_server;
+                                    
+                                    root /var/www/html;
+                                    index index.php index.html index.htm index.nginx-debian.html;
+                                
+                                    server_name _;
+                                
+                                    location / {
+                                        try_files $uri $uri/ =404;
+                                    }
+                                }</pre>
+                                <p>Next we need to add our public domain or IP address to the server_name line. This tells Nginx the domain to respond to. I am going to use an IP address for this tutorial since I am not setting up a domain. But if you have a domain name that you want this server to use then you would put the domain name here instead.</p>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    server {
+                                        listen 80 default_server;
+                                        listen [::]:80 default_server;
+                                        
+                                        root /var/www/html;
+                                        index index.php index.html index.htm index.nginx-debian.html;
+                                    
+                                        server_name 107.191.44.91;
+                                    
+                                        location / {
+                                            try_files $uri $uri/ =404;
+                                        }
+                                    }</pre>
+                                    <p>Now we need to do a few other housecleaning items. You will want to just trust me on these as they get more complex, but the concepts of what they accomplish should make sense to you. First things first we want to tell Nginx to use your php-fpm that we installed earlier.  This will be represented by the first location block that we add (it will actually be the second on in the document though, make sure to leave the first location block alone (for now, we will come back to configure it for Laravel later). The second location block we are adding (the third in the file) will be telling Nginx to ignore .htaccess files. This is because .htaccess files are for Apache and we are using Nginx. Sometimes Laravel files will have .htaccess files in them by default so let’s just make sure that if one gets onto our server to make sure it doesn’t interfere with anything and our users do not have access to it. These changes are marked in red below If you scroll down in your file you will notice that these two location blocks are already written for you, just uncomment the lines if you like or write it as shown below. If you decide to uncomment the lines, make sure you leave the notes commented out and also there is a line that reads fastcgi_pass 127.0.0.1:9000 that should stay commented. Basically just make sure that your uncommented lines match what is below. </p>
+                                    <pre class="brush: html; highlight: [2,4]">
+                                        server {
+                                            listen 80 default_server;
+                                            listen [::]:80 default_server;
+                                        
+                                            root /var/www/html;
+                                            index index.php index.html index.htm index.nginx-debian.html;
+                                        
+                                            server_name 107.191.44.91;
+                                        
+                                            location / {
+                                                try_files $uri $uri/ =404;
+                                            }
+                                        
+                                            location ~ \.php$ {
+                                                include snippets/fastcgi-php.conf;
+                                                fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+                                            }
+                                        
+                                            location ~ /\.ht {
+                                                deny all;
+                                            }
+                                        }
+                                        </pre>
+                                        <p>So that is all we need to do for now. We will come back to this file again in a moment, but let’s save and close it for now just to make sure everything is good to go. To save it remember to press Ctrl + X and then type Y and then press enter. Now that we have saved the file, make sure it is error free by typing:</p>
+                                        <pre class="brush: html; highlight: [2,4]">sudo nginx -t</pre>
+                                        <p>If everything was correct then you should get this notice when submitting the command:</p>
+                                        <pre class="brush: html; highlight: [2,4]">
+                                            nginx: the configuration file /etc/nginx/nginx.conf syntax is ok 
+                                            nginx: configuration file /etc/nginx/nginx.conf test is successful</pre>
+                                        <p>This means you have no errors. Good work, now to let it take effect you can restart Nginx:</p>
+                                        <pre class="brush: html; highlight: [2,4]">sudo systemctl reload nginx</pre>
+                                        <p>With this set up, you are now ready to deploy any PHP application. The server is all set up to accept and deliver it. So in the next few steps we will set it up specifically to work for Laravel 5.</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line9" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Create A Folder for Laravel<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Now that our server is ready to serve files, lets get Laravel files set up so that our server can do what it was born to do and serve them. By default Nginx will look in our /var/www/ folder as the root of where to serve files. So we will add another folder in here called laravel (or whatever you want to call it) and place our Laravel app there.</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo mkdir -p /var/www/laravel</pre>
+                                <p>Now we have a folder to store Laravel in. Let’s update Nginx so that it knows about this folder. Of course we don’t just tell Nginx about the folder, we need to tell it where to find the default page to run whenever there is a web request. This means we need to understand something about Laravel first. In Laravel, there is a file called index.php in our public directory. This file is a php file that is actually most of the magic behind Laravel. Regardless of our routes, we always want to load this file. This file then grabs information about the request and sends it to our routes file (in routes/web.php in Laravel 5.3) which then parses the url that was passed into it to determine which controller to send it over to. When the routes file determines which controller and action to implement it does so, executes your controller action, which most likely returns a view that is what ultimately is returned to the user.</p>
+                                <br/>
+                                <p>The reason that this workflow is important to understand is that regardless of which route you go to, the page that is always loaded is the index.php page. All the routes and views that you see are actually the result of loading this same page on every request. I share this information with you to explain that we just need to tell Nginx to always load the index.php page no matter what, and after that Laravel will do the rest. In order to update Nginx, we are going to edit the same file we edited before. I will use Nano again, using this command:</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo nano /etc/nginx/sites-available/default</pre>
+                                <p>This time our focus will be on the root line which is the location that Nginx starts looking for a file to send back to the user. Right now it will default to /var/www/html which is actually just fine location for our app if you want to use it. But we will change it to the laravel/ folder that we just created.</p>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    server {
+                                        listen 80 default_server;
+                                        listen [::]:80 default_server ipv6only=on;
+                                    
+                                        root /var/www/laravel/public;
+                                        index index.php index.html index.htm;
+                                    
+                                        server_name 100.100.100.100;
+                                    
+                                        location / {
+                                                try_files $uri $uri/ =404;
+                                        }
+                                    
+                                        # more location blocks continue below
+                                        # (no changes needed beyond this point)
+                                </pre>
+                                <p>Just edit the one line on root, even though the rest of the file is not displayed above, leave it how it was in the previous steps, only edited the red text. You will now see that we point to the laravel/public/ directory. This is because the index.php file that we want to use is inside the public/ folder. You can see below that once it gets in that folder it will start looking for index and then index.php where it will find our file and then in turn execute Laravel. Finally you might remember how I said that the index.php file collects the query data in order to pass it into Laravel. Well we need to do that now, attaching our query string onto the end of the index.php. We will do this after the $uri and $uri/ so that if there is something that needs to overwrite Laravel, they can execute before it gets to Laravel. An example of this is like if you have example.com/phpmyadmin you want the phpmyadmin uri to execute before Laravel. But most stuff will just get caught by Laravel. We also remove the 404 error because we will let Laravel decide if something needs to respond with a 404 error. Change only the red text and leave everything as it was (remember that the server_name on this example will not match your file, yours will either be the domain name or IP address you were given):</p>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    server {
+                                        listen 80 default_server;
+                                        listen [::]:80 default_server ipv6only=on;
+                                
+                                        root /var/www/laravel/public;
+                                        index index.php index.html index.htm;
+                                
+                                        server_name 100.100.100.100;
+                                
+                                        location / {
+                                                try_files $uri $uri/ /index.php?$query_string;
+                                        }
+                                        
+                                        # more location blocks continue below
+                                        # (no changes needed beyond this point)
+                                </pre>
+                                <p>Now make sure to save the file (Ctrl + X and then Y and then press the enter key). Once you are back at your ssh session (exited Nano) you can restart Nginx so the changes we made take effect.</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo service nginx restart</pre>
+                                <p>Try visiting your url now in the browser and if everything worked then you should now get a 404 page instead of the Nginx success page (this is actually a GOOD thing). This is because now Nginx is pointing at the Laravel folder (specifically the public folder inside the Laravel folder) instead of the html folder which contains that success page. Of course we haven’t installed Laravel yet, so that public folder doesn’t exist, hence the 404 error.</p>
+                 
+                                <div class="intro2 clearfix">
+                                    <p><i class="fa fa-warning"></i>Now you can open your folder (/var/www/laravel/) using FileZilla (or other tools) and upload files from Smile-backend there.</p>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line10" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Install Composer<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>You have installed composer before (otherwise you wouldn’t have made it to this point in your life where you are reading a tutorial about how to deploy a Laravel app), and this is no different than before. Follow the instructions just like on the GetComposer.org website.</p>
+                                <pre class="brush: html; highlight: [2,4]">curl -sS https://getcomposer.org/installer | php</pre>
+                                <p>Now we have composer.phar in our home folder, and it’s time to move it into our bin so we can use composer commands easier by just typing composer.</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo mv composer.phar /usr/local/bin/composer</pre>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line11" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Run Composer<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>So, run this command in order to avoid any further issues:</p>
+                                <pre class="brush: html; highlight: [2,4]">sudo apt install php-xml</pre>
+                                <p>And hey, remember when we installed composer a while ago? Well let’s use it. Now that we have Laravel on our server and all the files we need, lets run composer to get it working. Make sure you are in /var/www/laravel/ when you run composer commands because you want to be inside your laravel project.</p>
+                                <pre class="brush: html; highlight: [2,4]">composer install --no-dev</pre>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line12" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Laravel Permissions<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>In order to run, Nginx needs certain permissions over the Laravel directory we made. We need to first change ownership of the laravel directory to our web group.</p>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    sudo chown -R :www-data /var/www/laravel
+                                    sudo chmod -R 775 /var/www/laravel </pre>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line13" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Database Setup<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Lets get into MySQL by typing the following command:</p>
+                                <pre class="brush: html; highlight: [2,4]">mysql -u root -p'yourpassword'</pre>
+                                <p>Enter the following commands to create new Database (You can change 'laravel' to the name of your choice and replace 'secret' with your password for new Database user):</p>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    mysql> CREATE DATABASE laravel;
+                                    mysql> CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'secret';
+                                    mysql> GRANT ALL PRIVILEGES ON laravel.* TO 'newuser'@'localhost' WITH GRANT OPTION;
+                                    mysql> FLUSH PRIVILEGES;
+                                    mysql> quit
+                                </pre>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line14" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Working with Your .env file<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Now we can edit our .env by opening it with a text editor of your choice (once again we will use nano for simplicity)(Make sure you are in /var/www/laravel).</p>
+                                <pre class="brush: html; highlight: [2,4]">nano .env</pre>
+                                <p>Inside this file you will be able to overwrite many of the config settings. Remember that anything in the .env file will override whatever is in the config files.</p>
+                                <img src="images/env.png" alt="" class="img-responsive img-thumbnail">
+                                <p>You will need to configure your APP_URL to be Your Host(Server IP) or Your Domain connected to Your Server, set the DB_DATABASE to be the name of the database we just created in the last step, and then set your username and password for the database in the DB_USERNAME and DB_PASSWORD fields.</p>
+                                <br>
+                                <p>Lastly you will want to change the MAIL settings as well. Just configure it based on the settings for your email service provider.</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line15" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Encryption Key<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>There is one line we left default in our .env file, the APP_KEY. Laravel needs this key to be set up in order to encrypt our sessions, cookies, and passwords. In your terminal (in the /var/www/laravel/ folder):</p>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    php artisan key:generate
+                                    php artisan config:cache
+                                </pre>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line16" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Migrate Your Database<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>At this point our configuration files should have everything we need to set up and communicate with our database, so migrating now should be simple.</p>
+                                <pre class="brush: html; highlight: [2,4]">php artisan migrate</pre>
+                                <p>You will see something like this in your terminal:</p>
+                                <img src="images/migrate.png" alt="" class="img-responsive img-thumbnail">
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line17" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Backend Connection<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>And last, but not least, we will have to connect our backend to the Flutter app. In order to do that run those commands in the /var/www/laravel/ folder</p>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    php artisan passport:install
+                                </pre>
+                                <p>Now you will see clientSecrets in your terminal, copy the one with Client ID 2 as shown on the picture:</p>
+                                <img src="images/id.png" alt="" class="img-responsive img-thumbnail">
+                                <p>Finally, open Your Flutter project folder in VScode(or other editing tool)(File you are looking for is located in Storyteller/lib/src/constant/utils.dart) and replace information as shown on the picture (urlBase - Is your Backed Url, clientSecret - Is the secret we just copied):</p>
+                                <img src="images/flutter.png" alt="" class="img-responsive img-thumbnail">
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line18" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">App configuration and Structure<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Storyteller Flutter Project has easy to understand and use structure. In lib folder you can find src(Your Full project). Instide of src, there are several folders. One of them is ui. It contains all the app Pages. Other folders contain all the things necessary to run backed part(Models, Blocs etc.)</p>
+                                <br>
+                                <p>There are also links to Terms&Conditions implemented into the app(This Document is necessary for App Publication). By default it is hosted on your backend. You can find it in Storyteller-backend/resources/views/home.blade.php to edit.</p>
+                                <br>
+                                <p>Links to Terms&Conditions can be found in Storyteller/lib/src/ui/signup.dart and Storyteller/lib/src/ui/settings.dart files (Just search for 'link' in order to find the spots where they are needed and replace them with the link to your actual Terms&Conditions)</p>
+                                <br>
+                                <p>You can also check out assets folder to modify App Icon and fonts</p>
+                                <img src="images/asset.png" alt="" class="img-responsive img-thumbnail">
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line19" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Useful Links<a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>It is common to use phpMyAdmin with Laravel, here you can find how to install it and how to get TLS Certificate for your Domain if you need it: <a href="https://www.linuxbabe.com/ubuntu/install-phpmyadmin-nginx-lemp-ubuntu-18-04-lts" target="_blank">phpMyAdmin and TLS Certificate Installation</a></p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    
+                </div>
+                <!-- // end .col -->
+
+            </div>
+            <!-- // end .row -->
+
+        </div>
+        <!-- // end container -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+
+    <!-- CUSTOM PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/syntax-highlighter/scripts/shCore.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+
+</body>
+
+</html>
